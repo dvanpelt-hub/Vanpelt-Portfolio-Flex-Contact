@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Vanpelt Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=IBM+Plex+Mono:ital@1&family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header with name, student status, and profile image -->
+	<header>
+		  <h1>Daniel Vanpelt</h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+	</header>
+
+<!-- using a wrapper class for the main semantic container -->
+	<main>
+
+  <article class="wrapper">
+	  <div class="group">
+      <div class="item">
+        <img src="images/vanpelt_profile_pic.jpg" width="400" alt="Daniel Vanpelt Profile Pic"/>
+      </div>
+      <!--Intro, saying Hello!-->
+      <div class="item">
+        <h2>Hello Wolrd!</h2>
+        <p>My name is Dan and I am a student at Bloc participating in the Web Development Track. This is my portfolio which will be updated over the next several months. Below you'll find more information regarding my professional background, qualifications, interests, and more. Great to meet you!</p> 
+      </div>
+    </div>
+  </article>
+
+      <!--About Me-->
+  <article class="wrapper">
+    <div class="group">
+      <div class="item">
+        <div id="backdrop">
+          <section id="about">
+		        <h2>About Me</h2>             
+		        <p>I am a student at SNHU pursuing a B.S. in Finance (expected completion: 07/2021). For the past nine years I have have both served and worked with the US military, both overseas and within the US. This has resulted in a dynamic lifestyle which keeps me traveling frequently. I spend part of my time in London and the rest in Florida. Although I loved traveling and my previous work, I have recently decided it was time for a career change. Web and Software Development has been an interest of mine for quite some time, and I'm now making my transition into the industry!</p>
+
+            <p>I've chosen to participate in the Web Developer Bootcamp offered through Bloc and feel excited to meet others within the industry. Challenges and problem solving draw me in, and working with a team dedicated to completing projects and solving problems is exactly what I'm looking for. If you are looking for someone to assist in projects, please feel free to contact me!</p>
+          </section>
+        </div>
+    </div>
+  </article>
+
+  <br>
+<!-- list of interests, ordered list -->
+  <article class="wrapper">
+    <section id="interests">
+    <h2>Personal Interests:</h2>
+      <div class="group">
+          <p class="item" id="bordered">Finance and Investing Software</p>
+          <p class="item" id="bordered">Real Estate</p>
+          <p class="item" id="bordered">Mobile Running Apps</p>
+      </div>
+      </section>
+  </article>
+<!--LEFT OFF HERE, TRYING TO ARRANGE INTERESTS ALONG FOUR COLUMNS-->
+  <br>
+  
+  <article class="wrapper">
+    <div id="backdrop">
+    <h2>Locations</h2>
+    <div class="group">
+        <p class="item">Florida</p>
+        <p class="item">London</p>
+      </div>
+    </div>
+  </article>
+
+  <br>
+<!-- created buttons with links to contact options -->
+  <article class="wrapper">
+    <section id="contact">
+    <h2>Contact Me</h2>
+      <p class="btn btn-primary">
+      <a href = "https://www.linkedin.com/in/daniel-vanpelt-80329a87/" target="_blank">LinkedIn</a>
+      </p>
+      <p class="btn btn-primary">
+        <a href = "https://github.com/dvanpelt-hub" target="_blank">Github</a>
+      </p>
+      <p class="btn btn-primary">
+        <a href="vanpelt.daniel@yahoo.com" target="_blank">Email Me</a>
+      </p>
+      </section>
+  </article>
+
+  <article>
+    <h2> Send a message!</h2>
+      <div class="group">
+        <form action="#" method="POST">
+
+          <div class="item">
+            <label for="user-name">Name</label>
+            <input id="user-name" type="text" name="name">
+          </div>
+
+          <div class="item">
+            <label for="users-email">Email</label>
+            <input id="users-email" type="text" name="name">
+          </div>
+
+          <div class="item-double">
+            <label for="user-message">Your message</label>
+            <textarea id="user-message" name="message" autofocus="on" required maxlength="300" required minlength="1"></textarea>
+            <button type="send">Send</button>
+          </div>
+
+        </form>
+      </div>
+  </article>
+
+
+
+
+
+<!-- PLACEHOLDER FOR FUTURE PROJECTS
+    <div class="wrapper">
+      <article id="portfolio">
+      <h2>Portfolio</h2>
+			<div class='group'>
+				<div class='item'>
+          <img src="images/portfolio/placeholder.png" alt="Quiz App Screenshot" class="rounded">
+          <h3>Quiz App</h3>
+					<p>This is a description of the Quiz App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+				</div>
+				<div class='item'>
+          <img src="images/portfolio/placeholder.png" alt="Bookmark App Screenshot" class="rounded">
+          <h3>Bookmark App</h3>
+					<p>This is a description of the Bookmark App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+				</div>
+			</div>
+      <div class='group'>
+				<div class='item'>
+          <img src="images/portfolio/placeholder.png" alt="Pet App Screenshot" class="rounded">
+          <h3>Pet Appointment App</h3>
+					<p>This is a description of the Pet Appointment App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+				</div>
+				<div class='item'>
+          <img src="images/portfolio/placeholder.png" alt="Team Project Screenshot" class="rounded">
+          <h3>Team Project App</h3>
+					<p>This is a description of the Team Project App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+				</div>
+			</div>
+      </article>
+
+  END OF PLACEHOLDER CONTENT-->
+
+  </main>
+
+	<footer>
+		<div>
+			<p class="center-text">Copyright</p>
+		</div>
+	</footer>
+
+	<script src="script.js">
+	</script>
+</body>
+
+</html>

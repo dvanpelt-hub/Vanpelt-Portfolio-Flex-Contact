@@ -1,0 +1,193 @@
+/*/////////////////////////////////////////////////// basic layouts///////////////////////////////////////////////////*/
+header {
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 40px;
+  background-color: rgb(131, 131, 131);
+}
+
+body {
+  margin: 0;
+}
+
+main, footer{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+main, header, .center-text {
+  text-align: center;
+}
+
+main p {
+  font-size: 20px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+header, .center-text {
+  display: block;
+}
+
+#backdrop {
+  background-color: #bbbbbb;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+#bordered {
+  display: block;
+  border: 3px solid rgba(14, 2, 2, 0.925);
+  font-size: 20px;
+  padding: 100px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+/*///////////////////////////////////////////////////NAV////////////////////////////////////////////*/
+header h1 {
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/*///////////////////////////////////Media query for NAV, changing from mobile first to desktop/////////////////////////*/
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color:#dadada;
+  }
+}
+
+
+
+/*////////////////////////////////////buttons for contact me links//////////////////////////////////*/
+.btn {
+  display: inline-block;
+  border: 10px solid rgba(14, 2, 2, 0.925);
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ffffff;
+  border-color: #c2bfbf;
+  border-width: 1px;
+}
+
+
+/*////////////////////////////////when hovering over contact me links, buttons turn gray/////////////////////////////*/
+.btn:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.list-inside li {
+  list-style-position: inside;
+}
+
+/*///////////////////////////////////////////////////FLEX ASPECTS///////////////////////////////////////////////////*/
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+/*///////////////////////////////////////////////////MOBILE FIRST for rest of webpage///////////////////////////////////////////////////*/
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/*///////////////////////////////////////////////////CONTACT FORM///////////////////////////////////////////////////*/
+
+form {
+  padding-right: 6px;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 1.5rem;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Nunito'
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  padding: 10px 16px;
+  border-radius:10px;
+  border: 0;
+  font-family: 'Nunito';
+  font-size: 16px;
+  background: #c2bfbf;
+  color: #000;
+  margin: 0 8px 10px 0;
+}
