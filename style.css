@@ -31,7 +31,7 @@ header, .center-text {
   display: block;
 }
 
-#backdrop {
+.backdrop {
   background-color: #bbbbbb;
   padding: 20px;
 }
@@ -40,7 +40,7 @@ img {
   width: 100%;
 }
 
-#bordered {
+.bordered {
   display: block;
   border: 3px solid rgba(14, 2, 2, 0.925);
   font-size: 20px;
@@ -77,30 +77,6 @@ header nav ul li a {
 header nav ul li:last-child a {
   margin-right: 0;
 }
-
-/*///////////////////////////////////Media query for NAV, changing from mobile first to desktop/////////////////////////*/
-@media all and (min-width: 800px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-
-  header h1 {
-    margin: 14px 0;
-    padding-top: 0;
-  }
-
-  header nav {
-    margin-top: 8px;
-  }
-
-  header nav ul li a:hover {
-    color:#dadada;
-  }
-}
-
-
 
 /*////////////////////////////////////buttons for contact me links//////////////////////////////////*/
 .btn {
@@ -149,7 +125,9 @@ header nav ul li:last-child a {
   flex: 2;
   margin: 10px;
 }
-/*///////////////////////////////////////////////////MOBILE FIRST for rest of webpage///////////////////////////////////////////////////*/
+/*MOBILE FIRST for rest of, Media query for NAV, changing from mobile first to desktop webpage*/
+
+
 @media all and (min-width: 800px) {
   .wrapper {
     width: 80%;
@@ -158,6 +136,25 @@ header nav ul li:last-child a {
 
   .group {
     flex-direction: row;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color:#dadada;
   }
 }
 
