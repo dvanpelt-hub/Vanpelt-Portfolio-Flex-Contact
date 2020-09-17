@@ -22,7 +22,7 @@
       </nav>
 	</header>
 
-<!-- using a wrapper class for the main semantic container -->
+<!-- Using a wrapper class for the main semantic container -->
 	<main>
 
   <article class="wrapper">
@@ -32,7 +32,7 @@
       </div>
       <!--Intro, saying Hello!-->
       <div class="item">
-        <h2>Hello Wolrd!</h2>
+        <h2>Hello World!</h2>
         <p>My name is Dan and I am a student at Bloc participating in the Web Development Track. This is my portfolio which will be updated over the next several months. Below you'll find more information regarding my professional background, qualifications, interests, and more. Great to meet you!</p> 
       </div>
     </div>
@@ -40,28 +40,29 @@
 
       <!--About Me-->
   <article class="wrapper">
+    <h2>About Me</h2>
     <div class="group">
       <div class="item">
-        <div id="backdrop">
-          <section id="about">
-		        <h2>About Me</h2>             
-		        <p>I am a student at SNHU pursuing a B.S. in Finance (expected completion: 07/2021). For the past nine years I have have both served and worked with the US military, both overseas and within the US. This has resulted in a dynamic lifestyle which keeps me traveling frequently. I spend part of my time in London and the rest in Florida. Although I loved traveling and my previous work, I have recently decided it was time for a career change. Web and Software Development has been an interest of mine for quite some time, and I'm now making my transition into the industry!</p>
+        <div class="backdrop">
+          <div id="about">             
+		        <p>I am a student at SNHU pursuing a B.S. in Finance (expected completion: 07/2021). For the past nine years I have served and worked with the US military, both overseas and within the US. This has resulted in a dynamic lifestyle which keeps me traveling frequently. I spend part of my time in London and the rest in Florida. Although I loved traveling and my previous work, I have recently decided it was time for a career change. Web and Software Development has been an interest of mine for quite some time, and I'm now making my transition into the industry!</p>
 
-            <p>I've chosen to participate in the Web Developer Bootcamp offered through Bloc and feel excited to meet others within the industry. Challenges and problem solving draw me in, and working with a team dedicated to completing projects and solving problems is exactly what I'm looking for. If you are looking for someone to assist in projects, please feel free to contact me!</p>
-          </section>
+            <p>I've chosen to participate in the Web Developer bootcamp offered through Bloc and feel excited to meet others within the industry. Challenges and problem solving draw me in, and working with a team dedicated to completing projects and solving problems is exactly what I'm looking for. I am able to collaborate and work independently on web development, using HTML, CSS, and JS. Additionally, as my skills progress I will update my list of services offered via this portfolio. If you are looking for someone to assist in projects, please feel free to contact me!</p>
+          </div>
         </div>
+      </div>
     </div>
   </article>
 
   <br>
 <!-- list of interests, ordered list -->
   <article class="wrapper">
-    <section id="interests">
     <h2>Personal Interests:</h2>
+    <section id="interests">
       <div class="group">
-          <p class="item" id="bordered">Finance and Investing Software</p>
-          <p class="item" id="bordered">Real Estate</p>
-          <p class="item" id="bordered">Mobile Running Apps</p>
+          <p class="item bordered">Finance and Investing Software</p>
+          <p class="item bordered">Real Estate</p>
+          <p class="item bordered">Mobile Running Apps</p>
       </div>
       </section>
   </article>
@@ -69,7 +70,7 @@
   <br>
   
   <article class="wrapper">
-    <div id="backdrop">
+    <div class="backdrop">
     <h2>Locations</h2>
     <div class="group">
         <p class="item">Florida</p>
@@ -82,15 +83,16 @@
 <!-- created buttons with links to contact options -->
   <article class="wrapper">
     <section id="contact">
-    <h2>Contact Me</h2>
+      <h2>Contact Me</h2>
+      <!--CHANGE TO REFLECT-->
       <p class="btn btn-primary">
-      <a href = "https://www.linkedin.com/in/daniel-vanpelt-80329a87/" target="_blank">LinkedIn</a>
+      <a href = "https://www.linkedin.com/in/daniel-vanpelt-80329a87/" target="_blank">Linkedin</a>
       </p>
       <p class="btn btn-primary">
-        <a href = "https://github.com/dvanpelt-hub" target="_blank">Github</a>
+        <a href = "https://github.com/dvanpelt-hub" target="_blank">GitHub</a>
       </p>
       <p class="btn btn-primary">
-        <a href="vanpelt.daniel@yahoo.com" target="_blank">Email Me</a>
+        <a href="mailto:vanpelt.daniel@yahoo.com" target="_blank">Email Me</a>
       </p>
       </section>
   </article>
@@ -98,7 +100,8 @@
   <article>
     <h2> Send a message!</h2>
       <div class="group">
-        <form action="#" method="POST">
+        <form action="https://formspree.io/vanpelt.daniel@yahoo.com"
+ method="post">
 
           <div class="item">
             <label for="user-name">Name</label>
@@ -112,8 +115,8 @@
 
           <div class="item-double">
             <label for="user-message">Your message</label>
-            <textarea id="user-message" name="message" autofocus="on" required maxlength="300" required minlength="1"></textarea>
-            <button type="send">Send</button>
+            <textarea id="user-message" name="message" required maxlength="300" minlength="1"></textarea>
+            <button type="submit">Send</button>
           </div>
 
         </form>
@@ -123,8 +126,7 @@
 
 
 
-
-<!-- PLACEHOLDER FOR FUTURE PROJECTS
+<!--
     <div class="wrapper">
       <article id="portfolio">
       <h2>Portfolio</h2>
@@ -153,8 +155,7 @@
 				</div>
 			</div>
       </article>
-
-  END OF PLACEHOLDER CONTENT-->
+-->
 
   </main>
 
